@@ -1,0 +1,107 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    min-height: 600px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.painel{
+    border: 1px solid gray;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow:row wrap;
+    margin-top: 70px;
+}
+.pixel{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.tool-bar{
+    position: fixed;
+    right: 0;
+    top:0;
+    height: 100vh;
+    width: 100px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    filter: blur(1px);
+}
+.tool-bar:hover{
+    width: 150px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.534);
+    filter: blur(0px);
+}
+.color-picker{
+    border:none;
+    outline: none;
+    background:none;
+    padding:none;
+}
+.color-picker:hover{
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.301);
+}
+.tool{
+    width: 80px;
+    height: 80px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+}
+.tool:hover{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.356);
+    transform: translateY(-5px);
+}
+.tool img{
+    width: 100%;
+    height: auto;
+}
+
+.panel-size{
+    position:fixed;
+    top: 10px;
+    left: 40%;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.363);
+    display: flex;
+    align-items: center;
+}
+.largura, .altura{
+    margin: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+    height: 30px;
+    width: 50px;
+    font-size: 15pt;
+}
+.largura:focus, .altura:focus{
+    background:rgb(255, 254, 199);
+}
+.change-size{
+    outline: none;
+    background-color: white;
+    border:none;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    margin: 10px;
+    cursor:pointer;
+    font-size: 15pt;
+    margin-left:auto;
+}
+.change-size:hover{
+    background-color: rgb(255, 252, 217);
+}
+
