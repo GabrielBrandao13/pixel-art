@@ -148,6 +148,8 @@ function loadState(){
                 // console.log(`carregando a cor ${state.color[i]}`)
             }
         }
+    }else{
+        renderPanel()   
     }
 
 }
